@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+body{
+    background-color: #F1F2F6;
+    color: #3D3D3D;
+    font-size: 1.2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+a ,a:visited{
+    text-decoration: none;
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.2))
+}
+
+.drop-shadow-txet {
+    -webkit-filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(6px 6px 3px rgba(0, 0, 0, 0.3))
+}
+
+.text-effect{
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    text-decoration: underline;
+    text-decoration-thickness: auto;  
+    text-decoration-thickness: 3px;  
+}
+
+
+.box-shadow:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.bg-text{
+    font-size: 5rem;
+}
+
+.button-block{
+    color: #3D3D3D;
+
+}
+
+.icon-size-md{
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+}
+
+
+
+
+
+
+
+.hover-link {
+    margin: 0 auto;
+    border: none;
+    background: none;
+    color: #3D3D3D;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    padding: 3rem 0 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hover-link > span {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    pointer-events: none;
+  }
+  
+  .hover-link > span > span {
+    display: inline-block;
+  }
+  
+  .hover-link > span > span:nth-of-type(1) {
+    transition: 0.4s ease all;
+  }
+  
+  .hover-link > span > span:nth-of-type(2) {
+    transition: 0.4s ease all;
+    transition-delay: 0.07s;
+  }
+  
+  .hover-link > span > span > span {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(250%);
+  }
+  
+  .hover-link:hover > span > span,
+  .hover-link:focus > span > span {
+    transform: translateY(-250%);
+  }
+
+
+
+#cursor {
+    pointer-events: none;
+    width: 3rem;
+    height: 3rem;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.35s ease width, 0.35s ease height, 0.35s ease border,
+      0.35s ease background;
+    transform: translate(-50%, -50%);
+  }
+  
+  #cursor.button {
+    width: 5rem;
+    height: 5rem;
+    border: solid 1px transparent;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+
+
+
+  .btn1 {
+    position: relative;
+    border-radius: 4px;
+    bottom:-20px;
+    width: 250px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3D3D3D;
+    background-color: #C2E7FF;
+    border: white;
+}
+
+.btn1:hover {
+    box-shadow: 1px 2px 8px  rgba(0,0,0,0.15),
+    -2px -2px 12px  rgba(0,0,0,0.15);
+
+    }
+
+
+
+
+
+
+
+.btn2 {
+    position: relative;
+    border-radius: 4px;
+    bottom:-30px;
+    width: 250px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3D3D3D;
+    background-color: white;
+    box-shadow: 6px 6px 10px -5px rgba(0, 0, 0, 0.15), 
+                1px 4px 8px -2px rgba(255,255,255,0.2);
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.btn2:hover {
+    box-shadow: inset 4px 4px 6px -10px rgba(0,0,0,0.2), 
+                inset -6px -6px 6px 1px rgba(255,255,255,0.4), 
+                            0.5px 0.5px 0px rgba(0,0,0,0.15), 
+                                0px 8px 10px -10px rgba(0,0,0,0.05);
+        border: 1px solid rgba(0,0,0,0.01);
+    
+    }
+
+
+    .btn2:focus{
+        background-color: #C2E7FF;
+        box-shadow: inset 4px 4px 6px -10px rgba(0,0,0,0.2), 
+        inset -6px -6px 6px 1px rgba(255,255,255,0.4), 
+                    0.5px 0.5px 0px rgba(0,0,0,0.15), 
+                        0px 8px 10px -10px rgba(0,0,0,0.05);
+border: 1px solid rgba(0,0,0,0.01);
+transition: ease-in 0.2s;
+    }
+
+    .imgshadow{
+      box-shadow: 2px 2px 4px  rgba(0,0,0,0.1),
+      -2px -2px 4px  rgba(0,0,0,0.1);
+    }
+
+.Spacing-experience{
+  margin-top: 40vh;
+  margin-bottom: 80vh;
+}
+
+
+
