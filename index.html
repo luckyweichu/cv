@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="all.css">
   <link rel="stylesheet" href="src/computerstuff.css">
   <link rel="icon" type="image/x-icon" href="/bug.svg">
+  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -38,10 +39,9 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="nav nav-pills mb-3 navbar-nav nav-fill ms-auto"
               id="pills-tab" 
-              role="tablist"
-              >
+              role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" 
+              <a class="nav-link active" 
                       id="pills-home-tab" 
                       data-bs-toggle="pill" 
                       data-bs-target="#pills-home" 
@@ -50,26 +50,25 @@
                       aria-controls="pills-home" 
                       aria-selected="true"
                       aria-expanded="false"
-                      data-bs-toggle="dropdown"
+                      data-bs-toggle="collapse"
                       data-bs-auto-close="outside">
-                      <i class="bi bi-person-fill nav-icon"></i>簡介</button>
+                      <i class="bi bi-person-fill nav-icon"></i>簡介</a>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" 
+              <a class="nav-link" 
                       id="pills-profile-tab" 
-                      data-bs-toggle="pill" 
-                      data-bs-target="#pills-profile" 
                       type="button" 
                       role="tab" 
                       aria-controls="pills-profile" 
                       aria-selected="false"
                       aria-expanded="false"
-                      data-bs-toggle="dropdown"
+                      data-bs-target="#pills-profile" 
+                      data-bs-toggle="pill"
                       data-bs-auto-close="outside">
-                      <i class="bi bi-tools nav-icon"></i>經歷</button>
+                      <i class="bi bi-tools nav-icon"></i>經歷</a>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" 
+              <a class="nav-link" 
                       id="pills-contact-tab" 
                       data-bs-toggle="pill" 
                       data-bs-target="#pills-contact" 
@@ -78,12 +77,12 @@
                       aria-controls="pills-contact" 
                       aria-selected="false"
                       aria-expanded="false"
-                      data-bs-toggle="dropdown"
+                      data-bs-toggle="collapse"
                       data-bs-auto-close="outside">
-                      <i class="bi bi-code-square nav-icon"></i>作品</button>
+                      <i class="bi bi-code-square nav-icon"></i>作品</a>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" 
+              <a class="nav-link" 
                       id="pills-downlord-tab" 
                       data-bs-toggle="pill"  
                       data-bs-target="#pills-downlord" 
@@ -92,9 +91,9 @@
                       aria-controls="pills-downlord" 
                       aria-selected="false"
                       aria-expanded="false"
-                      data-bs-toggle="dropdown"
+                      data-bs-toggle="collapse"
                       data-bs-auto-close="inside">
-                      <i class="bi bi-cloud-arrow-down-fill nav-icon"></i>開發中(暫定下載履歷PDF)</button>
+                      <i class="bi bi-cloud-arrow-down-fill nav-icon"></i>開發中(暫定下載履歷PDF)</a>
             </li>
          </ul>
 
@@ -163,7 +162,7 @@
           </button> -->
         </div>
         <div class="row-cols-sm-1 my-3 text-start">
-        <p class="col-12 my-4 drop-shadow-txet fw-bold">擅長：UI設計、前端切版、美觀文件製作(PowerPoint、Word、Excel)</p>
+        <p class="col-12 my-4 drop-shadow-txet fw-bold">擅長：UI設計(Figma、Wireframe)、前端切版、美觀文件製作(PowerPoint、Word、Excel)</p>
         <p class="col-12 my-4 drop-shadow-txet fw-bold">經驗：曾在資策會進修，包含前後端與資料庫建立，結訓後回到高雄至前公司邑泰科技擔任程式設計師</p>
         <p class="col-12 my-4 drop-shadow-txet fw-bold">負責：UI設計(Figma、CSS)、前端切版(Bootstrap、asp.net)、簡報與操作文件等製作(PowerPoint、Word)</p>
         </div>
@@ -193,7 +192,7 @@
               <h5>80%熟練</h5>
             </div>
             <div class="col">   
-              <h4>Mysql</h4>
+              <h4>Mysql、PHP</h4>
               <span class="Skillsline my-3"><span class="Skill30"></span></span>
               <h5>30%略懂</h5>
             </div>
@@ -201,6 +200,7 @@
         <div class="row my-5">
             <div class="col">
               <h4>other software</h4>
+              <h5>(photoshop)</h5>
               <span class="Skillsline my-3"><span class="Skill50"></span></span>
               <h5>50%普通</h5>
             </div>
@@ -210,7 +210,7 @@
               <h5>80%熟練</h5>
             </div>
             <div class="col">   
-              <h4>PHP</h4>
+              <h4>Git</h4>
               <span class="Skillsline my-3"><span class="Skill30"></span></span>
               <h5>30%略懂</h5>
             </div>
@@ -644,9 +644,6 @@
   </div>
 
 
-
-
-  
 
 
 
