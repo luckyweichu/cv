@@ -178,7 +178,7 @@ background: #19489C;
 
 
 
-/* 特效 */
+/* skill animotion */
 
 @keyframes Skill80{
 	0%{
@@ -206,28 +206,6 @@ background: #19489C;
 		width: 30%;
 	}
 }
-
-@keyframes Skillsql{
-	0%{
-		width: 0%;
-	}
-	100%{
-		width: 30%;
-	}
-}
-
-@keyframes Skillother{
-	0%{
-		width: 0%;
-	}
-	100%{
-		width: 90%;
-	}
-}
-
-
-
-
 
 
 
@@ -429,10 +407,10 @@ transition: ease-in 0.2s;
 	content: "";
 	position: absolute;
 	display: block;
-	top: 12%;
+	top: 5%;
 	left: 0;
   width: 100%;
-	height: 88%;
+	height: 100%;
 	z-index: 5;
 	background-color: rgba(0, 0, 0, 0.5);
 	border: 1px solid rgba(255, 255, 255, 0.1);
@@ -471,7 +449,7 @@ transition: ease-in 0.2s;
 .Hobbies-item img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+  object-fit: cover;
 	position: absolute;
 	top: 20px;
 	left: 0;			
@@ -935,7 +913,5 @@ i {
   text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
   transform: translate(0, -8);
 } */
-
-
 
 
