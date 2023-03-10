@@ -17,12 +17,12 @@
 </head>
 
 
-<body  data-bs-target="#navbarNavDropdown">
+<body>
   <div class="container-fluid">
     <div class="row">
       <nav class="navbar fixed-top navbar-expand-md bg-customer navbar-light " id="navbar-example2">
         <div class="navbar-brand" style="font-size: 1.5rem;">
-          <a href="#" class="link-dark">
+          <a href="" class="link-dark">
             <img src="img/face.png" alt="Wade" style="width:40px;" class="rounded-pill">
             Wade
           </a>
@@ -33,6 +33,7 @@
                 data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" 
                 aria-expanded="" 
+                data-bs-auto-close="true"
                 aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,56 +41,56 @@
           <ul class="nav nav-pills mb-3 navbar-nav nav-fill ms-auto"
               id="pills-tab" 
               role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" 
+            <li class="nav-item" aria-hidden="true" href="" >
+              <a  class="nav-link active" 
                       id="pills-home-tab" 
                       type="button" 
-                      role="tab"                                      
+                      role="tab"                          
                       data-bs-toggle="pill" 
                       data-bs-target="#pills-home" 
                       aria-controls="pills-home" 
                       aria-selected="true"
                       aria-expanded="false"
-                      data-bs-auto-close="outside">
+                      data-bs-auto-close="true">
                       <i class="bi bi-person-fill nav-icon"></i>簡介</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" 
+            <li class="nav-item" aria-hidden="true" href="">
+              <a  class="nav-link" 
                       id="pills-profile-tab" 
                       type="button" 
-                      role="tab" 
+                      role="tab"        
                       data-bs-toggle="pill"
                       data-bs-target="#pills-profile"    
                       aria-controls="pills-profile"                                         
-                      aria-selected="false"
+                      aria-selected="true"
                       aria-expanded="false"
-                      data-bs-auto-close="outside">
+                      data-bs-auto-close="true">
                       <i class="bi bi-tools nav-icon"></i>經歷</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" 
+            <li class="nav-item" aria-hidden="true">
+              <a href="" class="nav-link" 
                       id="pills-contact-tab" 
                       type="button" 
-                      role="tab"                       
+                      role="tab"                     
                       data-bs-toggle="pill" 
                       data-bs-target="#pills-contact" 
                       aria-controls="pills-contact" 
                       aria-selected="false"
                       aria-expanded="false"
-                      data-bs-auto-close="outside">
+                      data-bs-auto-close="true">
                       <i class="bi bi-code-square nav-icon"></i>作品</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" 
+            <li class="nav-item" aria-hidden="true">
+              <a href="" class="nav-link" 
                       id="pills-downlord-tab" 
                       type="button" 
-                      role="tab"                       
+                      role="tab"                  
                       data-bs-toggle="pill"  
                       data-bs-target="#pills-downlord" 
                       aria-controls="pills-downlord" 
                       aria-selected="false"
                       aria-expanded="false"
-                      data-bs-auto-close="inside">
+                      data-bs-auto-close="true">
                       <i class="bi bi-cloud-arrow-down-fill nav-icon"></i>開發中</a>
             </li>
          </ul>
@@ -225,7 +226,7 @@
           </div>
       </div>
       </div>
-      <h3 class="hw1">系統</h3>       
+      <p class="hw1">系統</p>       
       <div class="container">
         <div class="row drop-shadow-box my-2 fw-bold">
           <p>本站支援手機、平板、電腦等畫面,採用RWD技術</p>
@@ -255,8 +256,8 @@
 
 
 
-    <div class="collapse fade mt-5 row" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-      <h3 class="hw1">經歷</h3>
+    <div class="collapse fade mt-5 row position-absolute top-0" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0" >
+      <p class="hw1">經歷</p>
       <div class="wrap">
         <div class="comp">
           <div class="monitor">
@@ -445,7 +446,16 @@
         <p class="col-12 my-2 drop-shadow-txet">負責：游標卡尺檢驗產品、不良品處理、相關文件製作(PPT、Word)</p>
       </div>
 
-      <div class="Hobbies-item  row-cols-md-2 row-cols-lg-2">
+      <div class="row-cols-sm-1 my-5 text-start fw-bold">
+        <p class="hw1">設計</p>
+        <p class="col-12 my-2 drop-shadow-txet">Wireframe：如同下圖設計方式說明設計，根據經驗單純以線性圖展示，多數客戶依然難以理解，故以色框圖面取代線框圖面。</p>
+        <p><span class="comment">(圖片來源:Google)</span></p>
+
+        <i><img src="img/Learn-about-the-new-integrated-Gmail-layout-2.jpg" alt=""></i>
+        <p class="col-12 my-2 drop-shadow-txet"></p>
+      </div>
+
+      <!-- <div class="Hobbies-item  row-cols-md-2 row-cols-lg-2">
         <div class="design-card">
             <div class="imgBx"><img src="img/baseball.jpg">
                 <div class="story">
@@ -478,12 +488,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-      <img src="img/S__30654471.jpg" class="img-fluid" alt="...">
+      <!-- <img src="img/S__30654471.jpg" class="img-fluid" alt="...">
       <img src="img/S__30654466.jpg" class="img-fluid" alt="...">
       <img src="img/S__30654468.jpg" class="img-fluid" alt="...">
-      <img src="img/S__30654469.jpg" class="img-fluid" alt="...">
+      <img src="img/S__30654469.jpg" class="img-fluid" alt="..."> -->
     </div>
 
     <div class="collapse fade row" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
@@ -647,7 +657,14 @@ $('.nav-link').on('click',function() {
 });
 </script>
 
-
+<script>
+  
+  window.tab.scrollTo( 0, 0);
+  window.tab.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
+</script>
 
   <!-- <script>
     let cursor = document.getElementById("cursor");
